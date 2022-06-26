@@ -16,6 +16,7 @@
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
+    
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 
@@ -130,17 +131,22 @@ img {
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--title-text-color);
-    font-weight: 500;
+
+    font-weight: 500; 
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -152,8 +158,22 @@ img {
     margin-left: auto;
 }
 
-.auth-nav .item+.item {
+.auth-nav .item +.item {
     margin-left: 50px;
+}
+
+.auth-nav-icon {
+    padding: 0;
+    margin-right: 10px;
+
+    text-align: center;
+    
+    fill: currentColor;
+}
+
+.auth-nav-icon:hover,
+.auth-nav-icon:focus {
+    color: var(--accent-color);
 }
 
 
@@ -174,6 +194,10 @@ img {
     top: 80px;
     text-align: center;
     display: block;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -229,7 +253,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    /* justify-content: center; */
+    
+}
+
+.feature-list-icon {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #F5F4FA;
+
+    margin-bottom: 30px;
 }
 
 .feature-list .item {
@@ -320,6 +356,7 @@ img {
     margin-bottom: 10px;
 
     color: var(--primary-text-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -347,9 +384,52 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+.list-social-icon .link {
+    fill: currentColor;
+}
+
+.list-social-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+}
+
+.list-social-icon .link:hover,
+.list-social-icon .link:focus {
+    color: #FFFFFF;
+   
+}
+
+.list-social-icon:hover,
+.list-social-icon:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    width: 206px;
+    height: 44px;
+
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+
 /* Секция Постоянные клиенты */
 
-.klients {
+
+
+.customers section {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 36px;

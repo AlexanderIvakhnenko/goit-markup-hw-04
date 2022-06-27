@@ -22,11 +22,29 @@ body {
 
 }
 
+/* Общие стили */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+.a {
+    text-decoration: none;
+} 
+
 
 .visually-hidden {
     position: absolute;
@@ -56,8 +74,7 @@ img {
 
 .list {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    
 }
 
 
@@ -483,17 +500,20 @@ img {
 /* Footer*/
 
 
-.logo .secondary {
+ .logo .secondary { 
     margin-top: 60px;
     margin-bottom: 20px;
     color: var(--primary-white-color);
-}
+} 
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-bg-gray-color);
 
+}
+
+.footer .container {
     display: flex;
 }
 
@@ -557,74 +577,55 @@ img {
 .contact .info:focus {
     color: var(--accent-color);
 }
-/* 
-.footer .container {
-    display: flex;
-} */
 
+.first-fsection {
+    min-width: 231px;
+}
 
+.second-fsection {
+    margin-left: 70px;
+    padding-top: 15px;
+}
 
-.list-social-icon {
-    fill: currentColor;
-}  
-
-.footer-social .caption {
-    display: flex;
+.footer-title {
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    color: #FFFFFF;
     margin-bottom: 20px;
-
-    color: #FFFFFF;
-
 }
 
-.footer .social-icon {
-    margin-left: 0;
-    margin-right: 0;
-
-}
-
-.footer-social .list-social-icon {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #FFFFFF;
-}
-
-.list-social-icon {
+.footer-social {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+}
 
+.fsocial-list:nth-child(n + 2) {
+    margin-left: 10px;
+}
+
+fsocial-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-
-}
-
-.list-social-icon .link {
-    color: #AFB1B8;
-
-}
-
-.list-social-icon .link:hover,
-.list-social-icon .link:focus {
-    color: #FFFFFF;
-
-}
-
-
-
-.list-social-icon:hover,
-.list-social-icon:focus {
-    background-color: #2196F3;
     border-radius: 50%;
-
-
+    background: rgba(255, 255, 255, 0.1);
 }
+
+.fsocial-icon {
+    fill: #FFFFFF;
+}
+
+.fsocial-link:hover,
+.fsocial-link:focus {
+    background: #2196f3;
+}
+
+
 
 /* Стили для Портфолио*/
 
@@ -652,6 +653,7 @@ img {
 .button.secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.secondary.all {
@@ -696,7 +698,7 @@ img {
     margin-bottom: 50px;
 }
 
-.list.filter>.item:nth-child(n+2) {
+.list.filter > .item:nth-child(n+2) {
     margin-left: 8px;
 }
 
@@ -705,6 +707,10 @@ img {
 /* Элементы  */
 
 
+.link-elements {
+    display: block;
+    text-decoration: none;
+}
 .projects .title {
     margin-top: 0;
     margin-bottom: 4px;
@@ -728,7 +734,7 @@ img {
 
 .link {
     text-decoration: none;
-    display: block;
+    display: flex;
 }
 
 .projects.link.list {
@@ -740,6 +746,14 @@ img {
 .projects-element {
     width: calc((100% - 60px) / 3);
     display: block;
+}
+
+.projects-element:hover,
+.projects-element:focus {
+    background: #FFFFFF;
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .projects-element:nth-child(-n + 6) {

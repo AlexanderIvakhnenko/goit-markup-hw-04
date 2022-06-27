@@ -41,7 +41,7 @@ img {
     margin: -1px;
 }
 
-/* Утилиты */
+/* Общие Утилиты */
 
 .container {
     margin-left: auto;
@@ -52,7 +52,7 @@ img {
     margin-top: 0 auto;
 }
 
-/* Outline: 2px solid red;  */
+
 
 .list {
     list-style: none;
@@ -64,7 +64,7 @@ img {
 /* Стили для html */
 
 
-/* шапка сайта site-nav*/
+/* шапка  site-nav*/
 
 
 .logo {
@@ -238,6 +238,7 @@ img {
     padding: 10px 32px;
     min-width: 200px;
     cursor: pointer;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -429,13 +430,55 @@ img {
 
 
 
-.customers section {
-    color: var(--primary-text-color);
+.customers title {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+
     font-weight: 400;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+
+.customers-list {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+
+    color: #AFB1B8;
+}
+
+.customers-item:nth-child(n + 2) {
+    margin-left: 30px;
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #AFB1B8;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid #2196f3;
+    color: #2196F3;
+}
+
+.customers-svg {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
 
 /* Footer*/
 
@@ -450,11 +493,14 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-bg-gray-color);
+
+    display: flex;
 }
 
 .footer .logo {
     margin-top: 60px;
     margin-bottom: 20px;
+    margin-right: 156px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -510,6 +556,74 @@ img {
 .contact .info:hover,
 .contact .info:focus {
     color: var(--accent-color);
+}
+/* 
+.footer .container {
+    display: flex;
+} */
+
+
+
+.list-social-icon {
+    fill: currentColor;
+}  
+
+.footer-social .caption {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+
+}
+
+.footer .social-icon {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.footer-social .list-social-icon {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+
+.list-social-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+}
+
+.list-social-icon .link {
+    color: #AFB1B8;
+
+}
+
+.list-social-icon .link:hover,
+.list-social-icon .link:focus {
+    color: #FFFFFF;
+
+}
+
+
+
+.list-social-icon:hover,
+.list-social-icon:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+
+
 }
 
 /* Стили для Портфолио*/

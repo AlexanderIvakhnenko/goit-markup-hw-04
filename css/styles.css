@@ -218,6 +218,18 @@ img {
 
 }
 
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img\ bg\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
 
 .hero .title {
     margin-bottom: 30px;
@@ -402,7 +414,7 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.list-social-icon .link {
+ .team-social-icon .text {
     fill: currentColor;
 }
 
